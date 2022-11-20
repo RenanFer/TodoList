@@ -1,5 +1,6 @@
 import styled from 'styled-components/native';
 import { PlusCircle } from 'phosphor-react-native';
+import { TouchableOpacity } from 'react-native';
 
 export const Container = styled.View`
     flex: 1;
@@ -7,12 +8,13 @@ export const Container = styled.View`
 `;
 
 export const InputContent = styled.View`
+    margin: -30px 0 0;
     flex-direction: row;
 
     justify-content: center;
 `;
 
-export const ButtonAdd = styled.TouchableOpacity`
+export const ButtonAdd = styled(TouchableOpacity)`
     margin-left: 4px;
 
     width: 52px;
